@@ -1,0 +1,18 @@
+.main {
+  &__title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+  &__form__name {
+    margin-top: 24px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+  }
+}

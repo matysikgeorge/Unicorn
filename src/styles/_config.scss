@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Roboto", "San-Francisco-Pro-Display", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+}
+
+select {
+  color: inherit;
+  appearance: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 456px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 48px;
+}

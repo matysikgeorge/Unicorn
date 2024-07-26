@@ -1,1 +1,97 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Roboto", "San-Francisco-Pro-Display", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+}
+
+select {
+  color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 456px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "San-Francisco-Pro-Display";
+  src: url("../fonts/San_Francisco_Pro_Display/SF-Pro-Display-Light.otf Francisco Pro Display/ Francisco Pro Display/");
+  font-weight: 400;
+}
+.background {
+  max-width: 900px;
+  height: 984px;
+  width: 100%;
+  background-image: url("../img/fon_picture.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px 0 0 50px;
+}
+
+.header__logo {
+  width: 356px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.main__title {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 40px;
+}
+.main__form__name {
+  margin-top: 24px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+}/*# sourceMappingURL=style.css.map */
