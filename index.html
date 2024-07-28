@@ -14,8 +14,19 @@
   <body>
     <!-- BACKGROUND -->
     <section class="background">
-      <div class="background__container"></div>
+      <div class="background__container">
+        <p class="background__text">
+          Photo by
+          <a
+            class="background__text-link"
+            href="https://unsplash.com/@irrabagon"
+          >
+            Alexandr Popadin</a
+          >
+        </p>
+      </div>
     </section>
+    <!-- HEAD -->
     <section class="container">
       <header class="header">
         <div class="header__wrapper">
@@ -33,19 +44,61 @@
           </div>
         </div>
       </header>
+      <!-- MAIN -->
       <section class="main">
         <div class="main__wrapper">
           <h1 class="main__title">Nice to see you again</h1>
-          <div class="main__form">
-            <p class="main__form__name">Login</p>
-            <form action="#" method="get">
-              <input type="text" name="" id="" />
-              <p class="main__form__name">Password</p>
-              <input type="password" name="" id="" />
-            </form>
+          <link class="main__form" />
+          <form class="main__form__text" action="#" method="get">
+            <label class="main__form__login">Login</label>
+            <input
+              class="main__form__input-size"
+              type="text"
+              name="login"
+              id="login"
+              placeholder="Email or phone number"
+            />
+            <label class="main__form__password" for="password">Password</label>
+            <!-- <div class="main__form__input__icon"> -->
+            <input
+              class="main__form__input-size"
+              type="password"
+              id="password"
+              placeholder="Enter password"
+            />
+            <!-- <i class="main__Fa" aria-hidden="true"></i> -->
+          <!-- </div> -->
+          </form>
+          <div class="main__bottom__block">
+            <input type="checkbox" class="main__swithcher" />
+            <div class="main__bottom__block-info">
+              <p class="main__bottom__block-text">Remember me</p>
+              <a class="link" href="#">Forgot password?</a>
+            </div>
+          </div>
+          <button class="main__bottom__block__primary__button">Sing in</button>
+          <div class="main__line"></div>
+          <button class="main__bottom__block__google__button">
+            <img src="./src/img/svg/google_icon.svg" alt="google" />Or sign in
+            with Google
+          </button>
+          <div class="main__recomend">
+            <p class="main__bottom__block-text--center">Dont have an account?</p>
+            <a class="link" href="#">Sign up now</a>
           </div>
         </div>
       </section>
+      <div class="main__footer__block">
+        <div class="main__footer__blok-left">
+          <img src="./src/img/svg/Figma_icon.svg" alt="figma" />
+          <a
+            class="main__mail__link"
+            href="mailto: https://www.figma.com/@uiunicorn?fuid=1176155415843119150"
+            >@uiunicorn</a
+          >
+        </div>
+        <p class="main__right-text">© Perfect Login 2021</p>
+      </div>
     </section>
   </body>
 </html>

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Roboto", "San-Francisco-Pro-Display", sans-serif;
+  font-family: "Poppins", "Roboto", "SF Pro Display", sans-serif;
 }
 
 ul,
@@ -30,15 +30,12 @@ select {
   border: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: inherit;
-  font-weight: 400;
+h1 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
 }
 
 .container {
@@ -48,29 +45,64 @@ p {
   padding: 48px;
 }
 
+body {
+  display: flex;
+}
+
+.link {
+  color: #007aff;
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+  transition: 0.3s;
+}
+.link:hover {
+  color: black;
+}
+
 @font-face {
   font-family: "Poppins";
-  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "San-Francisco-Pro-Display";
-  src: url("../fonts/San_Francisco_Pro_Display/SF-Pro-Display-Light.otf Francisco Pro Display/ Francisco Pro Display/");
+  font-family: "SF Pro Display";
+  src: url("../fonts/San_Francisco_Pro_Display/SF-Pro-Display-Regular.otf");
   font-weight: 400;
 }
 .background {
-  max-width: 900px;
-  height: 984px;
+  max-width: 984px;
+  height: 900px;
   width: 100%;
   background-image: url("../img/fon_picture.webp");
   background-size: cover;
   background-position: center;
-  border-radius: 50px 0 0 50px;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+}
+.background__text {
+  color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+}
+.background__text-link {
+  color: white;
+  text-decoration-line: underline;
 }
 
 .header__logo {
@@ -81,17 +113,197 @@ p {
 }
 
 .main__title {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
   margin-top: 40px;
+}
+.main__form {
+  margin-top: 24px;
+}
+.main__form__text {
+  display: flex;
+  flex-direction: column;
+}
+.main__form__login {
+  font-family: "SF Pro Display";
+  font-size: 11px;
+  line-height: 12px; /* 109.091% */
+  letter-spacing: 0.3px;
+  margin: 24px 16px 8px;
+}
+.main__form__password {
+  margin: 16px 16px 8px;
+  font-family: "SF Pro Display";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 109.091% */
+  letter-spacing: 0.3px;
 }
 .main__form__name {
   margin-top: 24px;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 140% */
+}
+.main__form__input-size {
+  color: #808080;
+  border-radius: 6px;
+  border: 0.5px solid #e5e5e5;
+  background: #f2f2f2;
+  height: 48px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  padding: 8px 8px 8px 16px;
+}
+.main__bottom__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 8px;
+}
+.main__swithcher {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.main__swithcher:checked {
+  background-color: #007aff;
+}
+.main__swithcher::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+.main__swithcher:checked::before {
+  left: 20px;
+}
+.main__bottom__block-info {
+  display: flex;
+  flex: 1;
+}
+.main__bottom__block__primary__button {
+  border: 1px solid #007aff;
+  background-color: #007aff;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 0.3px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main__bottom__block__primary__button:hover {
+  color: white;
+  background-color: hsla(211, 90%, 52%, 0.892);
+}
+.main__bottom__block-text {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  flex: 1;
+  letter-spacing: 0.3px;
+}
+.main__bottom__block-text--center {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+.main__line {
+  margin-top: 32px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+}
+.main__bottom__block__google__button {
+  border: 1px solid #333;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+  border-radius: 6px;
+  margin-top: 32px;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main__bottom__block__google__button:hover {
+  color: white;
+  background-color: #292929;
+}
+.main__recomend {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.main__footer__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 233px;
+}
+.main__mail__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #007aff;
+  transition: 0.3s;
+}
+.main__mail__link:hover {
+  color: black;
+}
+.main__right-text {
+  color: #666;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.4px;
+}
+.main__footer__blok-left {
+  display: flex;
+  gap: 4px;
 }/*# sourceMappingURL=style.css.map */
