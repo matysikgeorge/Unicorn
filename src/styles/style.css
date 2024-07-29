@@ -74,6 +74,11 @@ body {
   font-weight: 400;
 }
 @font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
   font-family: "SF Pro Display";
   src: url("../fonts/San_Francisco_Pro_Display/SF-Pro-Display-Regular.otf");
   font-weight: 400;
@@ -100,7 +105,7 @@ body {
   top: 92%;
   left: 5%;
 }
-.background__text-link {
+.background__link {
   color: white;
   text-decoration-line: underline;
 }
@@ -115,9 +120,6 @@ body {
 .main__title {
   margin-top: 40px;
 }
-.main__form {
-  margin-top: 24px;
-}
 .main__form__text {
   display: flex;
   flex-direction: column;
@@ -128,6 +130,19 @@ body {
   line-height: 12px; /* 109.091% */
   letter-spacing: 0.3px;
   margin: 24px 16px 8px;
+}
+.main__form__input-size {
+  color: #808080;
+  border-radius: 6px;
+  border: 0.5px solid #e5e5e5;
+  background: #f2f2f2;
+  height: 48px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  padding: 8px 8px 8px 16px;
 }
 .main__form__password {
   margin: 16px 16px 8px;
@@ -145,19 +160,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 140% */
-}
-.main__form__input-size {
-  color: #808080;
-  border-radius: 6px;
-  border: 0.5px solid #e5e5e5;
-  background: #f2f2f2;
-  height: 48px;
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 133.333% */
-  padding: 8px 8px 8px 16px;
 }
 .main__bottom__block {
   display: flex;
@@ -197,6 +199,15 @@ body {
   display: flex;
   flex: 1;
 }
+.main__bottom__block-text {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  flex: 1;
+  letter-spacing: 0.3px;
+}
 .main__bottom__block__primary__button {
   border: 1px solid #007aff;
   background-color: #007aff;
@@ -218,23 +229,6 @@ body {
 .main__bottom__block__primary__button:hover {
   color: white;
   background-color: hsla(211, 90%, 52%, 0.892);
-}
-.main__bottom__block-text {
-  font-family: "SF Pro Display";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 166.667% */
-  flex: 1;
-  letter-spacing: 0.3px;
-}
-.main__bottom__block-text--center {
-  font-family: "SF Pro Display";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 166.667% */
-  letter-spacing: 0.3px;
 }
 .main__line {
   margin-top: 32px;
@@ -266,19 +260,32 @@ body {
   color: white;
   background-color: #292929;
 }
-.main__recomend {
+.main__bottom__block-text--center {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+.main__question {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: 24px;
 }
-.main__footer__block {
+
+.footer__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 233px;
 }
-.main__mail__link {
+.footer__blok-left {
+  display: flex;
+  gap: 4px;
+}
+.footer__mail__link {
   font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
@@ -291,10 +298,10 @@ body {
   color: #007aff;
   transition: 0.3s;
 }
-.main__mail__link:hover {
+.footer__mail__link:hover {
   color: black;
 }
-.main__right-text {
+.footer__right-text {
   color: #666;
   font-family: "Roboto";
   font-size: 12px;
@@ -302,8 +309,4 @@ body {
   font-weight: 400;
   line-height: 16px; /* 133.333% */
   letter-spacing: -0.4px;
-}
-.main__footer__blok-left {
-  display: flex;
-  gap: 4px;
 }/*# sourceMappingURL=style.css.map */
