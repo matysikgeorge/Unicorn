@@ -125,6 +125,7 @@ body {
   flex-direction: column;
 }
 .main__form__login {
+  color: #333;
   font-family: "SF Pro Display";
   font-size: 11px;
   line-height: 12px; /* 109.091% */
@@ -145,6 +146,7 @@ body {
   padding: 8px 8px 8px 16px;
 }
 .main__form__password {
+  color: #333;
   margin: 16px 16px 8px;
   font-family: "SF Pro Display";
   font-size: 11px;
@@ -261,6 +263,7 @@ body {
   background-color: #292929;
 }
 .main__bottom__block-text--center {
+  color: #1A1A1A;
   font-family: "SF Pro Display";
   font-size: 12px;
   font-style: normal;
@@ -269,6 +272,7 @@ body {
   letter-spacing: 0.3px;
 }
 .main__question {
+  color: #1A1A1A;
   display: flex;
   justify-content: center;
   gap: 8px;

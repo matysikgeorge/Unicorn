@@ -9,6 +9,7 @@
   }
 
   &__form__login {
+    color: #333;
     font-family: "SF Pro Display";
     font-size: 11px;
     line-height: 12px; /* 109.091% */
@@ -31,6 +32,7 @@
   }
 
   &__form__password {
+    color: #333;
     margin: 16px 16px 8px;
     font-family: "SF Pro Display";
     font-size: 11px;
@@ -169,6 +171,7 @@
   }
 
   &__bottom__block-text--center {
+    color: #1A1A1A;
     font-family: "SF Pro Display";
     font-size: 12px;
     font-style: normal;
@@ -178,6 +181,7 @@
   }
 
   &__question {
+    color: #1A1A1A;
     display: flex;
     justify-content: center;
     gap: 8px;
